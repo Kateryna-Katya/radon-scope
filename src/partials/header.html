@@ -1,19 +1,53 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Radon</span>
+          <span class="logo__accent">Scope</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link active">Главная</a></li>
+              <li><a href="#about" class="nav__link">Аналитика</a></li>
+              <li><a href="#strategies" class="nav__link">Стратегии</a></li>
+              <li><a href="#cases" class="nav__link">Кейсы</a></li>
+              <li><a href="#resources" class="nav__link">Ресурсы</a></li>
+              <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__btn">
+          <span>Начать сейчас</span>
+          <i data-lucide="arrow-up-right"></i>
+      </a>
+
+      <button class="burger" aria-label="Menu">
+          <span></span>
+      </button>
   </div>
 </header>
+<div class="mobile-overlay">
+    <div class="mobile-menu-container">
+        <div class="mobile-menu__header">
+            <div class="logo">
+                <span class="logo__text">Radon</span>
+                <span class="logo__accent">Scope</span>
+            </div>
+            <button class="burger-close"><i data-lucide="x"></i></button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li><a href="#home" class="mobile-nav__link">Главная</a></li>
+                <li><a href="#about" class="mobile-nav__link">Аналитика</a></li>
+                <li><a href="#strategies" class="mobile-nav__link">Стратегии</a></li>
+                <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+                <li><a href="#cases" class="mobile-nav__link">Кейсы</a></li>
+                <li><a href="#resources" class="mobile-nav__link">Ресурсы</a></li>
+                <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+            <a href="tel:+33142685300" class="btn btn--primary btn--block">Позвонить эксперту</a>
+        </div>
+    </div>
+</div>
