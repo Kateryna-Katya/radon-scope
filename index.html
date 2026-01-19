@@ -1,56 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/radon-scope/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radon Scope | Карьерный апгрейд и стратегии роста</title>
+    <meta name="description" content="Инновационная платформа для развития карьеры во Франции и Европе.">
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/split-type"></script>
     <script type="module" crossorigin src="/radon-scope/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/radon-scope/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/radon-scope/assets/styles-D7Uau-XS.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Radon</span>
+          <span class="logo__accent">Scope</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link active">Главная</a></li>
+              <li><a href="#about" class="nav__link">Аналитика</a></li>
+              <li><a href="#strategies" class="nav__link">Стратегии</a></li>
+              <li><a href="#cases" class="nav__link">Кейсы</a></li>
+              <li><a href="#resources" class="nav__link">Ресурсы</a></li>
+              <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__btn">
+          <span>Начать сейчас</span>
+          <i data-lucide="arrow-up-right"></i>
+      </a>
+
+      <button class="burger" aria-label="Menu">
+          <span></span>
+      </button>
   </div>
 </header>
-
+<div class="mobile-overlay">
+    <div class="mobile-menu-container">
+        <div class="mobile-menu__header">
+            <div class="logo">
+                <span class="logo__text">Radon</span>
+                <span class="logo__accent">Scope</span>
+            </div>
+            <button class="burger-close"><i data-lucide="x"></i></button>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li><a href="#home" class="mobile-nav__link">Главная</a></li>
+                <li><a href="#about" class="mobile-nav__link">Аналитика</a></li>
+                <li><a href="#strategies" class="mobile-nav__link">Стратегии</a></li>
+                <li><a href="#innovations" class="mobile-nav__link">Инновации</a></li>
+                <li><a href="#cases" class="mobile-nav__link">Кейсы</a></li>
+                <li><a href="#resources" class="mobile-nav__link">Ресурсы</a></li>
+                <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+            <a href="tel:+33142685300" class="btn btn--primary btn--block">Позвонить эксперту</a>
+        </div>
+    </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge animate__animated animate__fadeInDown">
+              <span>Платформа года во Франции</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+              Постройте карьеру, которая работает на вас
+          </h1>
+
+          <p class="hero__subtitle">
+              Переосмыслите подход к развитию. Используйте экспертные методологии и AI-инструменты для реальных задач в европейской бизнес-среде.
+          </p>
+
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">
+                  <span>Бесплатная консультация</span>
+              </a>
+              <a href="#about" class="btn btn--outline">
+                  <span>Узнать детали</span>
+                  <i data-lucide="chevron-right"></i>
+              </a>
+          </div>
+      </div>
+
+      <div class="hero__visual">
+          <div class="hero__image-wrapper">
+              <img src="/radon-scope/assets/two-BDaDBZJX.jpg" alt="Career Upgrade" class="hero__img">
+              <div class="hero__shape"></div>
+          </div>
+          <div class="hero__stats">
+              <div class="stat-card">
+                  <span class="stat-card__number">94%</span>
+                  <span class="stat-card__label">успешных кейсов</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="platform" id="about">
+  <div class="container">
+      <div class="platform__grid">
+          <div class="platform__text-content">
+              <h2 class="section-title">Аналитика и инновации <br><span class="accent">вашего роста</span></h2>
+              <p class="section-descr">
+                  Radon Scope — это не просто блог, а передовая цифровая инфраструктура. Мы используем AI-инструменты для реальных задач, помогая вам переосмыслить подход к развитию в условиях европейского рынка.
+              </p>
+              <ul class="platform__features">
+                  <li class="feature-item">
+                      <div class="feature-item__icon"><i data-lucide="scan-eye"></i></div>
+                      <div class="feature-item__info">
+                          <h4>Глубокий аудит</h4>
+                          <p>Оценить перспективы проекта и личных компетенций по методологии EU-Standard.</p>
+                      </div>
+                  </li>
+                  <li class="feature-item">
+                      <div class="feature-item__icon"><i data-lucide="cpu"></i></div>
+                      <div class="feature-item__info">
+                          <h4>AI-прогнозирование</h4>
+                          <p>Решения, которые меняют правила игры через предиктивную аналитику рынка труда Франции.</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="platform__cards">
+              <div class="info-card info-card--main">
+                  <div class="info-card__tag">Инновация</div>
+                  <h3>Технология нового поколения</h3>
+                  <p>Пошаговый путь, понятный каждому: от стартапа до топ-менеджмента в ЕС.</p>
+                  <div class="info-card__footer">
+                      <span class="status-dot"></span> Доступно в Европе
+                  </div>
+              </div>
+
+              <div class="info-card info-card--accent">
+                  <div class="info-card__icon"><i data-lucide="trending-up"></i></div>
+                  <h3>+40%</h3>
+                  <p>Средний рост капитализации личного бренда после апгрейда.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="benefits" id="strategies">
+  <div class="container">
+      <div class="benefits__header">
+          <h2 class="section-title">Ваша стратегия <br><span class="accent">нового уровня</span></h2>
+          <p class="section-descr">Практики, применимые уже сегодня для масштабирования вашей карьеры в странах ЕС.</p>
+      </div>
+
+      <div class="benefits__accordion">
+          <div class="benefit-item active">
+              <div class="benefit-item__header">
+                  <span class="benefit-item__num">01</span>
+                  <h3 class="benefit-item__title">Программа пассивного дохода</h3>
+                  <div class="benefit-item__trigger">
+                      <i data-lucide="plus"></i>
+                  </div>
+              </div>
+              <div class="benefit-item__content">
+                  <div class="benefit-item__inner">
+                      <p>Мы внедряем технологию для пассивного дохода через капитализацию ваших знаний. Это решения, которые меняют правила игры: от монетизации личного бренда до создания цифровых активов.</p>
+                      <a href="#contact" class="benefit-link">Получить больше информации <i data-lucide="arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="benefit-item">
+              <div class="benefit-item__header">
+                  <span class="benefit-item__num">02</span>
+                  <h3 class="benefit-item__title">Стратегия роста на базе инноваций</h3>
+                  <div class="benefit-item__trigger">
+                      <i data-lucide="plus"></i>
+                  </div>
+              </div>
+              <div class="benefit-item__content">
+                  <div class="benefit-item__inner">
+                      <p>Инновационная технология анализа рынка труда Франции позволяет нам строить маршруты карьерного роста с точностью до 90%. Подключение занимает всего 2 минуты.</p>
+                      <a href="#contact" class="benefit-link">Узнать детали <i data-lucide="arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="benefit-item">
+              <div class="benefit-item__header">
+                  <span class="benefit-item__num">03</span>
+                  <h3 class="benefit-item__title">Экспертная поддержка на всех этапах</h3>
+                  <div class="benefit-item__trigger">
+                      <i data-lucide="plus"></i>
+                  </div>
+              </div>
+              <div class="benefit-item__content">
+                  <div class="benefit-item__inner">
+                      <p>Ваш проверенный партнер в Европе. Мы обеспечиваем экспертную поддержку: от юридических нюансов трудоустройства во Франции до психологического коучинга высшего звена.</p>
+                      <a href="#contact" class="benefit-link">Запросить доступ <i data-lucide="arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__grid">
+          <div class="innovations__visual">
+              <canvas id="radarCanvas"></canvas>
+              <div class="radar-label radar-label--1">AI-Анализ</div>
+              <div class="radar-label radar-label--2">Soft Skills</div>
+              <div class="radar-label radar-label--3">Networking</div>
+              <div class="radar-label radar-label--4">Market Fit</div>
+              <div class="radar-label radar-label--5">Management</div>
+          </div>
+
+          <div class="innovations__content">
+              <div class="hero__badge">Технологии будущего</div>
+              <h2 class="section-title">Инновации, которые <br><span class="accent">меняют правила</span></h2>
+              <p class="section-descr">
+                  Мы разработали платформу года, которая объединяет психологию роста и математические алгоритмы. Наш AI-инструмент строит ваш «цифровой двойник» карьеры для точного попадания в запросы рынка Франции.
+              </p>
+
+              <div class="innovation-feature">
+                  <div class="innovation-feature__box">
+                      <h4>Передовая инфраструктура</h4>
+                      <p>Решения, которые работают на вас 24/7, оценивая перспективы проекта в реальном времени.</p>
+                  </div>
+                  <div class="innovation-feature__box">
+                      <h4>Быстрый старт</h4>
+                      <p>Легко разобраться без опыта. Удобная адаптация к европейским стандартам за 2 недели.</p>
+                  </div>
+              </div>
+
+              <a href="#contact" class="btn btn--primary">
+                  <span>Запросить доступ</span>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="cases" id="cases">
+  <div class="container">
+      <div class="cases__header">
+          <h2 class="section-title">Реальні <span class="accent">кейси</span></h2>
+          <p class="section-descr">Методології, що довели свою ефективність на практиці в умовах європейського ринку.</p>
+      </div>
+
+      <div class="cases__grid">
+          <div class="case-card reveal">
+              <div class="case-card__img">
+                  <img src="/radon-scope/assets/one-CM-9lQ9u.jpg" alt="Кейс 1">
+                  <div class="case-card__overlay">
+                      <span>+50% доходу</span>
+                  </div>
+              </div>
+              <div class="case-card__info">
+                  <span class="case-card__tag">Tech / Paris</span>
+                  <h3>Марк Р. — CTO</h3>
+                  <p>Перехід з локальної посади до європейського менеджменту за 4 місяці. Оцінка перспектив проекту за AI-методикою.</p>
+              </div>
+          </div>
+
+          <div class="case-card reveal">
+              <div class="case-card__img">
+                  <img src="/radon-scope/assets/three-BAd7kTwd.jpg" alt="Кейс 2">
+                  <div class="case-card__overlay">
+                      <span>Relocation</span>
+                  </div>
+              </div>
+              <div class="case-card__info">
+                  <span class="case-card__tag">FinTech / Lyon</span>
+                  <h3>Олена В. — Lead Analyst</h3>
+                  <p>Повна зміна стратегії зростання. Вихід на ринок Франції з нульовим нетворкінгом через цифрову інфраструктуру Radon.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="resources" id="resources">
+  <div class="container">
+      <div class="resources__header">
+          <h2 class="section-title">Експертні <span class="accent">ресурси</span></h2>
+          <a href="#contact" class="btn btn--outline">Всі статті</a>
+      </div>
+
+      <div class="resources__list">
+          <article class="resource-item reveal">
+              <div class="resource-item__date">19 Січ 2026</div>
+              <div class="resource-item__body">
+                  <h3>AI-інструменти для реальних задач у рекрутингу</h3>
+                  <p>Платформа року: як автоматизувати покроковий шлях до оферу у Франції.</p>
+              </div>
+              <a href="#contact" class="resource-item__arrow"><i data-lucide="arrow-right"></i></a>
+          </article>
+
+          <article class="resource-item reveal">
+              <div class="resource-item__date">12 Січ 2026</div>
+              <div class="resource-item__body">
+                  <h3>Програма пасивного доходу для експертів</h3>
+                  <p>Переосмисліть підхід до розвитку: як монетизувати знання в країнах ЄС.</p>
+              </div>
+              <a href="#contact" class="resource-item__arrow"><i data-lucide="arrow-right"></i></a>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="quiz-section" id="quiz">
+  <div class="container">
+      <div class="quiz-card reveal">
+          <div class="quiz-card__header">
+              <div class="hero__badge">Самодиагностика</div>
+              <h2 class="section-title">Готовы ли вы к <br><span class="accent">апгрейду в ЕС?</span></h2>
+              <p>Пройдите быстрый опрос и получите предварительную оценку вашего кейса от нашей AI-системы.</p>
+          </div>
+
+          <div id="quiz-container" class="quiz-container">
+              <div class="quiz-step active" data-step="1">
+                  <h3 class="quiz-question">Какова ваша главная цель в карьере на ближайший год?</h3>
+                  <div class="quiz-options">
+                      <button class="quiz-opt-btn" data-value="1">Рост дохода</button>
+                      <button class="quiz-opt-btn" data-value="2">Релокация во Францию</button>
+                      <button class="quiz-opt-btn" data-value="3">Смена индустрии</button>
+                      <button class="quiz-opt-btn" data-value="4">Пассивный доход</button>
+                  </div>
+              </div>
+
+              <div class="quiz-progress">
+                  <div class="quiz-progress__bar" style="width: 10%;"></div>
+                  <span class="quiz-progress__text">Вопрос 1 из 10</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+      <div class="contact-grid">
+          <div class="contact-info">
+              <h2 class="section-title">Запросить <br><span class="accent">консультацию</span></h2>
+              <p class="section-descr">Оставьте заявку, и наш эксперт свяжется с вами в течение 24 часов для детального разбора вашего пути.</p>
+
+              <div class="contact-methods">
+                  <div class="contact-method">
+                      <div class="contact-method__icon"><i data-lucide="mail"></i></div>
+                      <div>
+                          <span>Пишите нам</span>
+                          <p>team@radon-scope.blog</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+              </div>
+              <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                  <input type="tel" id="phone" name="phone" placeholder="Телефон (только цифры)" pattern="[0-9+]*" required>
+              </div>
+
+              <div class="form-row">
+                  <div class="form-group captcha-group">
+                      <label id="captcha-label">Сколько будет 5 + 3?</label>
+                      <input type="text" id="captcha-input" placeholder="Ответ" required>
+                  </div>
+              </div>
+
+              <div class="form-group checkbox-group">
+                  <input type="checkbox" id="consent" required>
+                  <label for="consent">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">
+                  <span>Отправить запрос</span>
+                  <i data-lucide="send"></i>
+              </button>
+
+              <div id="form-message" class="form-message"></div>
+          </form>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col footer__col--info">
+              <a href="/" class="logo footer__logo">
+                  <span class="logo__text">Radon</span>
+                  <span class="logo__accent">Scope</span>
+              </a>
+              <p class="footer__description">
+                  Передовая цифровая инфраструктура для тех, кто строит карьеру, которая работает на результат. Платформа уже доступна в Европе.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__menu">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#about">Аналитика</a></li>
+                  <li><a href="#strategies">Стратегии</a></li>
+                  <li><a href="#cases">Кейсы</a></li>
+                  <li><a href="#contact">Контакты</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Юридическая информация</h4>
+              <ul class="footer__menu">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookies Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h4 class="footer__title">Контакты</h4>
+              <div class="footer__contacts">
+                  <a href="tel:+33142685300" class="footer__contact-link">
+                      <i data-lucide="phone"></i>
+                      +33 1 42 68 53 00
+                  </a>
+                  <a href="mailto:hello@radon-scope.blog" class="footer__contact-link">
+                      <i data-lucide="mail"></i>
+                      hello@radon-scope.blog
+                  </a>
+                  <address class="footer__contact-link">
+                      <i data-lucide="map-pin"></i>
+                      24 Rue de la Paix, 75002 Paris, France
+                  </address>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Radon Scope. Все права защищены. Предложение активно только в странах ЕС.</p>
+      </div>
   </div>
 </footer>
-
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <div class="cookie-popup__icon"><i data-lucide="info"></i></div>
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button id="accept-cookies" class="btn btn--primary btn--sm">Принять</button>
+      </div>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
