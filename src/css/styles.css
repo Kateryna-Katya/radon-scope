@@ -912,3 +912,93 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 @media (max-width: 600px) {
   .cookie-popup__content { flex-direction: column; text-align: center; }
 }
+/* --- СТИЛИ ДЛЯ ЮРИДИЧЕСКИХ СТРАНИЦ --- */
+.pages {
+  padding: 160px 0 100px; /* Отступ под фиксированный хедер */
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 50px;
+  line-height: 1.1;
+}
+
+.page-content {
+  max-width: 800px; /* Ограничиваем ширину текста для удобства чтения */
+  color: var(--color-text-dim);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.page-content h2 {
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+}
+
+.page-content p {
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 40px !important;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 25px;
+}
+
+/* Стилизация списков */
+.styled-list {
+  margin-bottom: 30px;
+}
+
+.styled-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.styled-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 10px;
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+.styled-list li strong {
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Контактная карточка внизу */
+.contact-card {
+  background: var(--color-bg-light);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 160, 23, 0.1);
+  margin-top: 40px;
+}
+
+.contact-card a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pages { padding-top: 120px; }
+  .page-title { font-size: 1.9rem; }
+}
